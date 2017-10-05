@@ -527,6 +527,7 @@ class ChipInput extends React.Component {
             {chips.map((tag, i) => {
               const value = dataSourceConfig ? tag[dataSourceConfig.value] : tag
               return chipRenderer({
+                other,
                 value,
                 text: dataSourceConfig ? tag[dataSourceConfig.text] : tag,
                 chip: tag,
